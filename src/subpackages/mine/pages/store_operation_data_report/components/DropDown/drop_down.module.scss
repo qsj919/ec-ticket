@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+  height: 88px;
+  font-size: 28px;
+  color: $subTitle-color;
+  .content {
+    width: 175px;
+    line-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    .caret_down {
+      line-height: 1;
+      width: 32px;
+      height: 32px;
+      margin-left: 8px;
+    }
+  }
+  .drop_down {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    height: 0px;
+    width: 210px;
+    z-index: 99;
+    transition: height 0.2s ease-out;
+    overflow: hidden;
+    border: 2px solid #f7f7f7;
+    border-radius: 20px;
+    &--active {
+      // height: 352px;
+      height: 440px;
+      z-index: 99;
+      background-color: #fff;
+    }
+    &__menu {
+      // flex: 1;
+      line-height: 88px;
+      padding: 0 30px;
+      
+      &:not(:last-child) {
+        @include border-bottom-1px(#eee);
+      }
+      &--active {
+        color: $theme-color;
+        background-color: #fff;
+      }
+    }
+  }
+  .mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+

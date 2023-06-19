@@ -1,0 +1,74 @@
+/**
+ * @author GaoYuJian
+ * @create date 2018-11-21
+ * @desc
+*/
+
+ 
+
+.goods_detail_color {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  // @include border-bottom-1px($border-color);
+  .label_view {
+    margin: 30px 0 40px;
+    .label {
+      color: $title-color;
+      font-size: $content-font;
+    }
+    .sub_title {
+      font-size: 24px;
+      padding: 4px 10px;
+      color: $theme-color;
+      background-color: #ffe5e9;
+      border-radius: 7px;
+      margin-left: 10px;
+    }
+  }
+
+  .items_container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    // color
+  }
+}
+.color_badge {
+  margin-right: 36px;
+  margin-bottom: 30px;
+  // &:nth-child(4n) {
+  //   margin-right: 0px;
+  // }
+  .color_item {
+    min-width: 140px;
+    height: 48px;
+    border-radius: 24px;
+    font-size: $font26;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: none;
+    text-align: center;
+    line-height: 48px;
+  }
+  .color_item_inactive {
+    @extend .color_item;
+    background-color: white;
+    color: $title-color;
+    border: 2px solid $line-color;
+  }
+  .color_item_active {
+    @extend .color_item;
+    background-color: #ffe5e9;
+    color: $theme-color;
+    border: 2px solid $theme-color;
+  }
+  .color_item--disabled {
+    @extend .color_item;
+    background-color: white;
+    color: #ccc;
+    @include border-1px(#e8e8e8, 24px);
+  }
+}

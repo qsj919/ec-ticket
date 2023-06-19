@@ -1,0 +1,69 @@
+.shop_address {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.textarea_view {
+  width: 100%;
+  height: 270px;
+  background-color: #fff;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 35px;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+.textarea_com {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #F8F8F8;
+  font-size: 26px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.text_len {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 26px;
+  color: #999999;
+}
+
+.action_parent {
+  height: 75px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 29px;
+}
+
+.action_view {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  justify-content: center;
+  padding-top: 15px;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #eee;
+
+  &__save {
+    @extend .action_parent;
+    width: 640px;
+    background-color: #E62E4D;
+  }
+}

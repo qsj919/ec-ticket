@@ -1,0 +1,76 @@
+.sku {
+  display: flex;
+  // align-items: center;
+  height: 100px;
+  &--group {
+    height: 128px;
+  }
+  &__content {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    @include border-bottom-1px(#f4f4f4);
+  }
+  &__name {
+    font-size: 28px;
+    color: $title-color;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    align-self: stretch;
+  }
+  &__label {
+    position: relative;
+    // display: inline-block;
+    max-width: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    &--s {
+      // align-items: center;
+    }
+  }
+  &__group_label {
+    position: absolute;
+    bottom: 0;
+    color: $normal-text-color;
+    font-size: 22px;
+  }
+  &__label:first-child {
+    color: $theme-color;
+  }
+  &__stepper {
+    position: relative;
+    flex: 0 0 194px;
+    width: 194px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    &__group_total {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%);
+      color: $theme-color;
+      font-size: 22px;
+    }
+  }
+}
+
+.check {
+  width: 82px;
+  // margin-right: 35px;
+  // width: 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_icon {
+    width: 36px;
+    height: 36px;
+  }
+}

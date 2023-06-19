@@ -1,0 +1,44 @@
+.input_modal {
+  width: 590px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 28px;
+  &__title {
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    color: $title-color;
+    font-size: 30px;
+    @include border-bottom-1px(#E2E1E6);
+  }
+  &__input {
+    height: 156px;
+    padding: 32px;
+    box-sizing: border-box;
+    &__input {
+      height: 92px;
+      padding: 25px 20px;
+      font-size: 30px;
+      box-sizing: border-box;
+      @include border-1px(#E2E1E6, 8px)
+    }
+  }
+  &__btns {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    @include border-top-1px($border-color);
+    &__btn {
+      flex: 1;
+      height: 88px;
+      line-height: 88px;
+      &--left {
+        color: $normal-text-color;
+        @include border-right-1px($border-color);
+      }
+      &--right {
+        color: $theme-color;
+      }
+    }
+  }
+}

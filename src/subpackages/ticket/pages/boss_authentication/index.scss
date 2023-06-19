@@ -1,0 +1,158 @@
+.navigation_class {
+  height: 100%;
+  background-color: #3764FF;
+  color: #fff;
+}
+.contanier {
+  // background-color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.bg_img {
+  height: 552px;
+  width: 100%;
+  // background-color: #3764FF;
+  position: absolute;
+  z-index: -1;
+  // z-index:999;
+  top: 0%;
+}
+.header_info {
+  height: 250px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 1;
+  &_title {
+    margin-bottom: 16px;
+    font-size: 48px;
+    color:#fff;
+    font-weight: 500;
+  }
+  &_subtitle {
+    margin-bottom: 40px;
+    font-size: 28px;
+    color:#fff
+  }
+}
+.body {
+  padding: 0 40px;
+  // background-color: #fff;
+  // height: 785px;
+  &_contanier {
+    padding: 48px 48px;
+    // padding-top: 48px;
+    // height: 785px;
+    background-color: #fff;
+
+    &_title {
+      margin-bottom: 48px;
+      color:#152B4D;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    &_item {
+      height: 80px;
+      display: flex;
+      margin-bottom: 48px;
+      &_img {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+      }
+      &_text {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        color:#152B4D;
+        font-size: 28px;
+        font-weight: 500;
+      }
+    }
+    &_button {
+      height: 96px;
+      background-color: #3764FF;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: 500;
+      font-size: 32px;
+     
+    }
+  }
+}
+.mask {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  opacity: 0.5;
+  z-index: 99;
+}
+.failRemindContanier {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding: 0 60px;
+  z-index: 999;
+}
+.failRemindPopup {
+  // height: 360px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 60px;
+  padding: 28px;
+  &_info {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_l1{
+      color:#152B4D;
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    &_l2{
+      color: #6E7C93;
+      font-size: 24px;
+      margin-bottom: 18px;
+      display: flex;
+      &_phone {
+        color:#3764FF;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+    &_l3{
+
+    }
+  }
+  &_button {
+    display: flex;
+    justify-content: space-between;
+    &_item {
+      height: 96px;
+      width: 272px;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 32px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

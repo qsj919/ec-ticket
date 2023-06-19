@@ -1,0 +1,63 @@
+/**
+ * @author GaoYuJian
+ * @create date 2019-02-22
+ * @desc
+*/
+
+.filter-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 48px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #cccccc;
+}
+
+.filter-button_selected {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 48px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #ffe5e9;
+  border: 1px solid $theme-color;
+}
+
+.filter-button__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 156px;
+  height: 62px;
+}
+
+.filter-button--normal {
+  background: #f1f1f1;
+}
+
+.filter-button__text {
+  position: relative;
+  font-size: 26px;
+  line-height: 26px;
+  z-index: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+  text-align: center;
+}
+
+.filter-button__text--selected {
+  color: $theme-color;
+}
+
+.filter-button__text--normal {
+  color: #222222;
+}

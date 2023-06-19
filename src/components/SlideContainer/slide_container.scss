@@ -1,0 +1,111 @@
+$duration: 300ms;
+
+// $cubic: cubic-
+
+.slide_full_screen {
+  position: fixed;
+  top: 2000px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 900;
+  visibility: hidden;
+  transition: visibility cubic-bezier(0.36, 0.66, 0.26, 1) $duration;
+  &--active {
+    visibility: visible;
+    top: 0;
+  }
+}
+
+.slide_container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  max-height: 60%;
+  overflow-y: scroll;
+  &--transition {
+    transition: transform cubic-bezier(0.36, 0.66, 0.26, 1) $duration;
+  }
+  &--top {
+    top: 0;
+    transform: translate(0, -100%);
+  }
+  &--right {
+    right: 0;
+    transform: translate(100%, 0);
+  }
+  &--bottom {
+    bottom: 0;
+    transform: translate(0, 100%);
+    border-radius: 42px 42px 0 0;
+    @include fix-iphone-x('padding', 'bottom', 0);
+    &.slide_container--fix_iphonex {
+      padding-bottom: 68px;
+      box-sizing: border-box;
+    }
+  }
+  &--left {
+    left: 0;
+    transform: translate(-100%, 0);
+  }
+
+  &--active {
+    transition: transform cubic-bezier(0.36, 0.66, 0.26, 1) $duration;
+    transform: translate(0, 0);
+    // opacity: 1;
+  }
+  &--center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    &.slide_container--active {
+      opacity: 1;
+      transition: transform cubic-bezier(0.36, 0.66, 0.26, 1) $duration,
+        opacity cubic-bezier(0.36, 0.66, 0.26, 1) $duration;
+    }
+  }
+}
+
+.slide_wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.slide_vertical {
+  width: 100vw;
+  &--bottom {
+    border-radius: 42px 42px 0 0;
+  }
+}
+
+.slide_horizontal {
+  height: 100vh;
+}
+
+.slide_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 2, 15, 0.5);
+  opacity: 0;
+  transition: opacity cubic-bezier(0.36, 0.66, 0.26, 1) $duration;
+  &--active {
+    opacity: 1;
+    transition: opacity cubic-bezier(0.36, 0.66, 0.26, 1) $duration;
+  }
+}
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }

@@ -1,0 +1,73 @@
+.e_button_container {
+  display: flex;
+  color: white;
+  &--large {
+    margin: 0 auto;
+    //width: 670px;
+    height: 88px;
+    font-size: $font34;
+    .e_button {
+      border-radius: 44px;
+      &--left {
+        border-radius: 44px 0 0 44px;
+      }
+      &--right {
+        border-radius: 0 44px 44px 0;
+      }
+    }
+  }
+  &--normal {
+    width: 100%;
+    height: 72px;
+    font-size: $font30;
+    .e_button {
+      border-radius: 36px;
+      &--left {
+        border-radius: 36px 0 0 36px;
+      }
+      &--right {
+        border-radius: 0 36px 36px 0;
+      }
+    }
+  }
+  &--small {
+    width: 126px;
+    height: 48px;
+    font-size: $font26;
+    .e_button {
+      border-radius: 24px;
+      &--left {
+        border-radius: 24px 0 0 24px;
+      }
+      &--right {
+        border-radius: 0 24px 24px 0;
+      }
+    }
+  }
+  .e_button {
+    flex: 1;
+    height: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    // border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $theme-color;
+    .line_1 {
+      font-size: 22px;
+      line-height: 22px;
+    }
+    .line_2 {
+      font-size: $font24;
+      line-height: 34px;
+    }
+    &--disabled {
+      opacity: 0.5;
+    }
+    &--right {
+      @include border-left-1px(white);
+    }
+  }
+}

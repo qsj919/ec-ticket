@@ -1,0 +1,45 @@
+.container {
+  padding: 0 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 28px;
+  color: $normal-text-color;
+}
+
+.del_icon {
+  width: 32px;
+  height: 32px;
+  padding: 10px 0 10px 10px;
+}
+
+.tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 28px;
+  margin-right: 20px;
+  background-color: $label-bg;
+  font-size: 26px;
+  color: $title-color;
+  border-radius: 28px;
+  height: 56px;
+  margin-bottom: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
+}

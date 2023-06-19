@@ -1,0 +1,139 @@
+.titleTextClass {
+  color: #222222;
+  font-size: 35px;
+  // font-weight: bold;
+  // margin-bottom: 8px;
+}
+
+.navigationClass {
+  background-color: transparent;
+}
+
+.header_bg {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  z-index: -99;
+}
+
+.navigation_view {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation_text {
+  color: #222222;
+  font-size: 35px;
+}
+
+.TicketListView {
+  width: 100%;
+  height: calc(100vh - 170px);
+  display: flex;
+  flex-direction: column;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.category_navigation {
+  background-color: transparent;
+}
+.containerClass {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+.custom_navigation_container__back {
+  position: absolute;
+  left: 0;
+  width: 125px;
+  height: 65px;
+  left: 40px;
+  top: 110px;
+  z-index: 9999;
+  align-self: center;
+}
+.custom_navigation_container__back__fixed {
+  position: fixed;
+}
+.guide {
+  &__main {
+    position: absolute;
+    top: 247px; // 88 + 104 + 110 / 2
+    left: 90px;
+    width: 416px;
+    height: 316px;
+  }
+  &__finger {
+    position: absolute;
+    top: 280px; // 88 + 104 + 110
+    right: 20px;
+    width: 200px;
+    height: 164px;
+  }
+  &__btn {
+    position: absolute;
+    top: 600px; // 247 + 316 + 40
+    left: 140px; // 90 + 416 / 2 - 314 / 2
+    width: 314px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    background: linear-gradient(360deg, #ff595e 0%, #ff9395 100%);
+    border-radius: 44px;
+  }
+}
+
+.order_search__viewer {
+  width: 150px;
+  height: 68px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F7F7;
+  transition: width 0.2s ease-in-out;
+  position: absolute;
+  overflow: hidden;
+  padding: 0 15px;
+  left: 24px;
+  z-index: 999;
+}
+.search_input {
+  flex: 1;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border: none;
+  font-size: 28px;
+  color: #666;
+}
+.search_cancel {
+  font-size: 29px;
+  color: #666;
+}
+.searchImage {
+  width: 40px;
+  height: 40px;
+  margin-right: 7px;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

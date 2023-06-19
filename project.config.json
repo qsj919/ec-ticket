@@ -1,0 +1,53 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "ec-ticket",
+  "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "appid": "wx2b2f32ee370d5f72",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false,
+    "newFeature": true,
+    "autoAudits": false,
+    "coverView": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "preloadBackgroundData": false,
+    "uglifyFileName": false,
+    "uploadWithSourceMap": true,
+    "enhance": true,
+    "useMultiFrameRuntime": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "disableUseStrict": false,
+    "ignoreUploadUnusedFiles": true,
+    "checkInvalidKey": true,
+    "babelSetting": { "ignore": [], "disablePlugins": [], "outputPath": "" },
+    "useStaticServer": true,
+    "showES6CompileOption": false,
+    "useCompilerPlugins": false,
+    "minifyWXML": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.6.1",
+  "simulatorType": "wechat",
+  "miniprogram": {
+    "current": 0,
+    "list": [
+      {
+        "id": 0,
+        "name": "pages/eTicketDetail/landscapeModel",
+        "pathName": "pages/eTicketDetail/landscapeModel",
+        "query": "pk=10023505229&sn=1509454373920&epid=21365",
+        "scene": null
+      }
+    ]
+  },
+  "condition": {},
+  "srcMiniprogramRoot": "dist/",
+  "packOptions": { "ignore": [], "include": [] },
+  "editorSetting": { "tabIndent": "insertSpaces", "tabSize": 2 }
+}

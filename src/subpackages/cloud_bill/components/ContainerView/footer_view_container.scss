@@ -1,0 +1,36 @@
+/**
+ * @author lgl
+ * @create date 2019-7-25
+ * @desc
+*/
+
+:host {
+  width: 100%;
+}
+
+.footer_view {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .view_container {
+    min-height: 100vh;
+  }
+  .footer_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: $bg-color;
+    padding: 40px 0;
+    flex-direction: column;
+    .ecool_technical_support {
+      width: 160px;
+      height: 44px;
+      margin-bottom: 10px;
+    }
+    .ecool_technical_support_text {
+      width: 464px;
+      height: 40px;
+    }
+  }
+}

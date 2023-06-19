@@ -1,0 +1,106 @@
+.container {
+  @include fix-iphone-x('padding', 'bottom', 100px);
+}
+
+.top_filter{
+  width: 100%;
+  height: 60px;
+  background-color:#fff;
+  display: flex;
+  align-items: center;
+}
+.top_filter_view{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color:#F7F7F7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_filter_search{
+  width: 45px;
+  height: 45px;
+  margin-left: 10px;
+}
+.top_filter_input{
+  font-size: 25px;
+  width: 90%;
+}
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  z-index: 500;
+  margin-bottom: 24px;
+  &__btns {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    &__btn {
+      padding: 0 24px;
+      color: $blue;
+      font-size: 30px;
+      position: relative;
+      &:first-child {
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          display: block;
+          width: 2px;
+          height: 24px;
+          background: #eeeeee;
+        }
+      }
+    }
+  }
+}
+
+.manage_panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  height: 100px;
+  width: calc(100% - 80px);
+  z-index: 2;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // box-sizing: border-box;
+  @include fix-iphone-x('padding', 'bottom', 0);
+  &__checkall {
+    display: flex;
+    align-items: center;
+    color: $title-color;
+    font-size: 26px;
+    &__img {
+      width: 36px;
+      height: 36px;
+      margin-right: 16px;
+    }
+    &__num {
+      display: flex;
+      align-items: center;
+      color: $normal-text-color;
+      // font-size: 26px;
+      margin-left: 10px;
+    }
+    &__all {
+      color: $blue;
+      margin-left: 10px;
+    }
+  }
+  &__btn {
+    width: 192px;
+    border-radius: 8px !important;
+  }
+}

@@ -1,0 +1,65 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70vh;
+  max-height: 70vh;
+  padding: 0 40px 118px;
+  color: #333;
+  z-index: 2;
+  box-sizing: border-box;
+  background-color: white;
+  overflow-y: scroll;
+  .thumbnail_wrapper {
+    width: 50%;
+    &:nth-child(2) {
+      .thumbnail {
+        width: 224px;
+      }
+    }
+    .thumbnail {
+      width: 172px;
+      height: 172px;
+    }
+  }
+  // .thumbnail_container {
+  //   display: flex;
+    
+  // }
+  .block {
+    .title {
+      color: #bbb;
+      font-size: 28px;
+      line-height: 80px;
+    }
+    .check_box_wrapper {
+      font-size: 28px;
+      display: flex;
+      height: 100px;
+      align-items: center;
+    }
+    .check_box {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      .check_icon {
+        width: 36px;
+        height: 36px;
+        margin-right: 8px;
+      }
+    }
+  }
+  .apply_btn {
+    position: fixed;
+    bottom: 30px;
+    width: 670px;
+    border-radius: 8px;
+    color: white;
+    height: 88px;
+    text-align: center;
+    line-height: 88px;
+    font-size: 30px;
+    background-color: #FF6F72;
+  }
+}

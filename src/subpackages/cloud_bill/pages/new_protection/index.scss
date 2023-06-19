@@ -1,0 +1,86 @@
+.protection_wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7; 
+  overflow: hidden ;
+  &_center {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &_item {
+      width: 90%;
+      height: 130px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &_first {
+        display: flex;
+        flex-direction: column;
+        line-height: 55px;
+        &_gray {
+          color: #999999;
+          font-size: 28px;
+        }
+      }
+      &_inputView {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_input {
+          text-align: center;
+          margin-right: 20px;
+          width: 140px;
+          height: 65px;
+          outline: none;
+          font-size: 28px;
+          background-color: #F4F4F4;
+        }
+      }
+    }
+    &_switchItems {
+      width: 90%;
+      height: 100px;
+      &_switchTab {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 210px;
+        &_item {
+          width: 90px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          font-size: 30px;
+          border: 2px solid #666666;
+          color: #666666;
+        }
+      }
+    }
+  }
+  &_save {
+    width: 85%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #ff636a;
+    color:#fff;
+    line-height: 70px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.chooseItem {
+  border: 2px solid #E62E4D;
+  color: #E62E4D;
+}

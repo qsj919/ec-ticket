@@ -1,0 +1,39 @@
+.container {
+  width: 590px;
+  height: 680px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // display: flex;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.close {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  padding: 30px;
+  top: 0px;
+  right: 0px;
+}
+
+.qr_code {
+  width: 360px;
+  height: 360px;
+  margin: 32px 0 40px;
+}
+
+.title {
+  color: #222;
+  font-size: 34px;
+  font-weight: 500;
+  // margin: 102px 0 432px;
+  padding-top: 102px;
+}
+
+.tip {
+  color: $subTitle-color;
+  font-size: 26px;
+}

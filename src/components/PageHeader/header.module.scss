@@ -1,0 +1,22 @@
+.header {
+  height: 100px;
+  // display: flex;
+  // align-items: center;
+  text-align: center;
+  background-color: white;
+  // margin-bottom: 20px;
+  &__back {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    padding: 20px 30px;
+    left: 0;
+  }
+  &__title {
+    line-height: 100px;
+    color: $title-color;
+    font-size: 36px;
+    // font-weight: 500;
+  }
+}

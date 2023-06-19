@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.order_item {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 0 24px;
+  font-size: 26px;
+  &__top {
+    display: flex;
+    align-items: center;
+    height: 168px;
+    color: #222;
+  }
+  &__img {
+    width: 120px;
+    height: 120px;
+    margin-right: 16px;
+  }
+}
+
+.row {
+  @include border-top-1px(#f4f4f4);
+}
+
+.row__size {
+  height: 80px;
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  padding: 12px 40px;
+  @include fix-iphone-x('padding', 'bottom', '12px');
+  background-color: white;
+}

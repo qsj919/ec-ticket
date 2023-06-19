@@ -1,0 +1,46 @@
+/**
+ * @author GaoYuJian
+ * @create date 2018-11-24
+ * @desc
+*/
+
+@mixin swiper-media {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.image_viewer_swiper {
+  width: 100%;
+  height: 100%;
+  .image_media_container {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    .swiper-media {
+      @include swiper-media;
+    }
+  }
+
+  .video_media_container {
+    position: relative;
+    height: 100%;
+    .swiper-media {
+      @include swiper-media;
+    }
+    .play_video_btn {
+      width: 96px;
+      height: 96px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -48px;
+      margin-top: -48px;
+      z-index: 1;
+    }
+  }
+}

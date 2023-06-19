@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.num_container {
+  height: 70px;
+  font-weight: 500;
+  color: #222;
+  font-size: 70px;
+  transition: transform cubic-bezier(0.22, 0.59, 0.32, 0.89) 1.75s;
+}
+
+.num {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  // line-height: 70px;
+}

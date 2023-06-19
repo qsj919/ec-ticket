@@ -1,0 +1,47 @@
+{
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "云单演示版",
+          "pathName": "subpackages/cloud_bill/pages/manage/index",
+          "query": "sn=1604397928202&epid=23657&shopId=117505",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "subpackages/cloud_bill/pages/food_all_goods/index",
+          "query": "mpErpId=4333",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "subpackages/cloud_bill/pages/all_goods/index",
+          "query": "mpErpId=4333",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "subpackages/cloud_bill/pages/manage/index",
+          "query": "sn=1616837192776&epid=27493&shopId=136753&__key_=16654669147141",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "授权手机号",
+          "pathName": "subpackages/mine/pages/auth_phone/index",
+          "query": "mpErpId=123321",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "ec-ticket",
+  "setting": {
+    "compileHotReLoad": true
+  }
+}

@@ -1,0 +1,52 @@
+.page_index_wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.noDataPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-family: PingFangSC-Regular, PingFangSC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+
+  .img {
+    width: 353px;
+    height: 373px;
+  }
+
+  .btn {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $theme-color;
+    font-size: 24px;
+    padding: 12px 0;
+    border-radius: 10px;
+  }
+}
+
+.check {
+  padding: 30px;
+}
+
+.input {
+  background-color: white;
+  margin: 0 30px;
+  width: 50%;
+  padding: 0 20px;
+}

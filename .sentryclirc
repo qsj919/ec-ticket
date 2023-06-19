@@ -1,0 +1,7 @@
+[auth]
+token="4f4f6577da2e41d1a3f0253148bed8a73ad680b72f024e01b944ad23af4d197c"
+
+[defaults]
+url = https://sentry.hzecool.com/
+org = "sentry"
+project = e-ticket-miniapp

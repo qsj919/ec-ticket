@@ -1,0 +1,168 @@
+.ticket_date_picker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+  &--visible {
+    display: block;
+  }
+  &__viewer {
+    width: 100%;
+    // height: 660px;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    animation: move ease-in-out .2s forwards;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    &___header {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 0 25px;
+    }
+
+    &__v {
+      border-bottom: 1px solid rgba($color: #eee, $alpha: 0.4);
+    }
+
+    &__tips {
+      padding: 0 25px;
+      color: $normal-text-color;
+      font-size: 22px;
+    }
+    &___valueView {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      box-sizing: border-box;
+      padding: 0px 25px 30px 25px;
+      width: 100%;
+      height: 110px;
+      margin-top: 10px;
+
+      .timeValue_line {
+        width: 14px;
+        height: 5px;
+        background-color: #CCCCCC;
+        margin: 0 35px;
+      }
+
+      &_item {
+        flex: 1;
+        height: 73px;
+        border: 1px solid #EAEAEA;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        position: relative;
+      }
+    }
+
+    &___content {
+      width: 100%;
+      height: 300px;
+
+      .picker_view_column_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &___action {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 0 25px;
+      margin-top: 30px;
+
+      &_item {
+        width: 333px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 29px;
+        border-radius: 10px;
+      }
+
+      .action_left {
+        background-color: #f7f7f7;
+        color: #666666;
+      }
+
+      .action_right {
+        background-color: #f7f7f7;
+        background-image: linear-gradient(to right, #FF788F, #E62E4D);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.useTime_label {
+  font-size: 27px;
+  font-weight: 500;
+  color: #222;
+  margin-right: 10px;
+}
+.reset_view {
+  font-size: 27px;
+  background-color: #EEEEEE;
+  border-radius: 30px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 19px;
+}
+
+.switch_btn {
+  padding: 6px 15px;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 26px;
+  color: #666666;
+  border: 0.5px solid #EAEAEA;
+}
+
+.toggle_icon {
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+}
+
+.delete_icon {
+  padding: 10px 20px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+@keyframes move {
+  0%{
+      transform: translateY(100%);
+  }
+  100%{
+      transform: translateY(0);
+  }
+}

@@ -1,0 +1,156 @@
+.order_bill_container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 25px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  &_header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #eeeeee;
+    .nickNameView {
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 31px;
+      color: #222222;
+      .headImage {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .nickName {
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .dwName {
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 26px;
+        color: #999999;
+        margin-left: 10px;
+      }
+    }
+    .order_timer {
+      font-size: 26px;
+      color: #999999;
+    }
+  }
+  &_content {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .goods_image_view {
+      width: 84px;
+      height: 84px;
+      border-radius: 10px;
+      .goodsImage {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .goods_information {
+      height: 100%;
+      box-sizing: border-box;
+      padding: 20px 0 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      font-size: 31px;
+      color: #222;
+      .goods_code {
+        font-size: 26px;
+        color: #999999;
+      }
+    }
+  }
+  &_bottom {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid #eeeeee;
+    .bill_no {
+      font-size: 29px;
+      color: #999;
+    }
+    .goods_count {
+      font-size: 29px;
+      color: #999;
+      margin-right: 10px;
+    }
+    .sum_money {
+      font-size: 29px;
+      color: #ff5050;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+    }
+    .pay_status {
+      background-color: #f7f7f7;
+      color: $title-color;
+      font-size: 24px;
+      border-radius: 4px;
+      margin-left: 6px;
+      padding: 4px 6px;
+      //   @extend .container;
+      //   justify-content: center;
+    }
+    .refund_status {
+      &__1 ,&__2 {  
+        font-size: 22px;
+        border-radius: 4px;
+        margin-left: 6px;
+        padding: 4px 6px;
+        background-color: #FF50500D;        
+        color: #FF5050FF;
+      }
+      &__3, &__5 {
+        background-color: #f7f7f7;
+        font-size: 22px;
+        border-radius: 4px;
+        margin-left: 6px;
+        padding: 4px 6px;
+        color: #999;
+      }
+    }
+  }
+  
+  .after_sale {
+    &_desc {
+      padding: 8px;
+      margin-left: 8px;
+      color: #FF5050FF;
+      background-color: #FF50500D;
+      font-size: 24px;
+    }
+
+    &_close_desc {
+      padding: 8px;
+      margin-left: 8px;
+      color: #999999FF;
+      background-color: #F7F7F7FF;
+      font-size: 24px;
+    }
+  }
+}

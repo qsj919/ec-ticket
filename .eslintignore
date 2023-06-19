@@ -1,0 +1,6 @@
+dist/
+.temp/
+config/
+node_modules/
+ec-canvas/
+babel.config.js

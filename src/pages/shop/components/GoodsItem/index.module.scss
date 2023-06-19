@@ -1,0 +1,36 @@
+.container {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.img {
+  width: 346px;
+  height: 346px;
+}
+
+.info {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 1;
+    &__code {
+      color: $title-color;
+      margin-bottom: 8px;
+    }
+    &__name {
+      color: $normal-text-color;
+    }
+  }
+
+  &__favor {
+    width: 32px;
+    height: 32px;
+  }
+}

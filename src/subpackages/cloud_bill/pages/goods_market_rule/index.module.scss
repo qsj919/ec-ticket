@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  @include fix-iphone-x(padding)
+}
+
+.rule {
+  overflow-y: scroll;
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-bottom: 1px solid $border-color;
+    &__title {
+      font-size: 34px;
+      color: $title-color;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    &__desc {
+      font-size: 28px;
+      color: $subTitle-color;
+    }
+    &__check_icon {
+      margin-left: 40px;
+      flex: 0 0 36px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+.goods_market_rule_btn{
+    width: 85%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #ff636a;
+    color:#fff;
+    line-height: 70px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}

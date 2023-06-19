@@ -1,0 +1,190 @@
+.container {
+  .top {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+    white-space: nowrap;
+    &__left {
+      display: flex;
+      align-items: center;
+    }
+    &__shop {
+      display: flex;
+      align-items: center;
+      font-size: 36px;
+      color: $subTitle-color;
+      &--input {
+        font-size: 36px;
+        // padding: 0 10px;
+        border: 0.5px solid #eee;
+        // @include border-1px(#eee, 4px)
+      }
+      &__name {
+        max-width: 280px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      &__edit {
+        width: 32px;
+        height: 32px;
+        padding: 6px;
+      }
+      .confirm,
+      .cancel {
+        flex: 0 0 48px;
+        width: 48px;
+        height: 48px;
+        margin-left: 10px;
+      }
+    }
+    &__star {
+      flex: 0 0 32px;
+      width: 32px;
+      height: 32px;
+      padding: 10px;
+      padding-right: 16px;
+    }
+    &__unfollow {
+      flex: 0 0 124px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      height: 48px;
+      padding: 0 14px;
+      box-sizing: border-box;
+      color: $normal-text-color;
+      @include border-1px($border-color, 24px);
+    }
+  }
+  .sum {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 180px;
+    &__left {
+      display: flex;
+      // flex-direction: column;
+      // justify-content: flex-end;
+      align-items: flex-end;
+      .yuan {
+        color: $theme-color;
+        font-size: 44px;
+        line-height: 64px;
+      }
+    }
+    .shop {
+      display: flex;
+      // flex-direction: column;
+      align-items: center;
+      font-size: 36px;
+      max-width: 400px;
+      &__avatar {
+        width: 80px;
+        height: 80px;
+        margin-right: 16px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+      }
+      &__name {
+        color: $subTitle-color;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      &__toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        padding: 0 12px;
+        font-size: 24px;
+        color: $subTitle-color;
+        @include border-1px(#aaa, 24px);
+        &__icon {
+          width: 32px;
+          height: 32px;
+          margin-left: 4px;
+        }
+      }
+      .caret_down {
+        width: 32px;
+        height: 32px;
+        margin-left: 8px;
+      }
+    }
+    .title {
+      font-size: 24px;
+      color: $normal-text-color;
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+      }
+    }
+    .content {
+      font-size: 64px;
+      color: $theme-color;
+      line-height: 1;
+    }
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .adjust {
+    width: 25vw;
+    position: absolute;
+    right: 0;
+  }
+  .statistics {
+    font-size: 28px;
+    // padding: 0 60px;
+    // display: flex;
+    // justify-content: space-between;
+    text-transform: capitalize;
+    &__item {
+      height: 140px;
+      width: 33.33%;
+      display: inline-block;
+      line-height: 1;
+      text-align: center;
+      padding-top: 30px;
+      box-sizing: border-box;
+      &__title {
+        color: $normal-text-color;
+        font-size: 24px;
+        &--question {
+          display: inline-block;
+          padding: 0 40px;
+          position: relative;
+        }
+      }
+      &__value {
+        display: block;
+        margin-top: 16px;
+        color: $title-color;
+        // font-size: 36px;
+      }
+    }
+  }
+  .questionIcon {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    padding-left: 4px;
+    top: -4px;
+  }
+}

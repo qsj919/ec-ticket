@@ -1,0 +1,185 @@
+.shop_manage {
+  width: 100%;
+
+  &__timeLimit {
+    width: 100%;
+    height: 88px;
+    background-color: #FFF2E6;
+    box-sizing: border-box;
+    padding: 0 30px;
+    font-size: 27px;
+    color: #97431E;
+    margin-bottom: 24px;
+
+    &___renewal {
+      width: 132px;
+      height: 48px;
+      border-radius: 30px;
+      color: #97431E;
+      background-color: #FFD6AD;
+      font-weight: 400;
+      font-size: 26px;
+    }
+  }
+
+  &__shopInfo {
+    width: 96%;
+    height: 226px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+
+    &__bg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__view {
+      width: 100%;
+      height: 91px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-radius: 29px 29px 0 0;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding-left: 136px;
+      padding-right: 24px;
+
+      &__headImage {
+        width: 91px;
+        height: 91px;
+        position: absolute;
+        left: 30px;
+        bottom: 28px;
+        border-radius: 18px;
+      }
+
+      &__shopName {
+        font-size: 28px;
+        color: #222222;
+        font-weight: 450;
+        margin-bottom: 14px;
+      }
+
+      &__shopSetting {
+        width: 136px;
+        height: 56px;
+        background: #F7F7F7;
+        border-radius: 8px;
+        border: 1px solid #DDDDDD;
+        font-size: 26px;
+        color: #222222;
+      }
+    }
+  }
+
+  &__connect_type {
+    width: 686px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 14px;
+    margin-top: 24px;
+    font-size: 26px;
+    box-sizing: border-box;
+    padding: 0 24px;
+  }
+
+  &__label {
+    width: 98%;
+    font-size: 26px;
+    color: #999999;
+    margin: 32px;
+    box-sizing: border-box;
+    padding-left: 32px;
+  }
+
+  &__hotModel {
+    width: 94%;
+    height: 100px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 20px;
+    font-size: 30px;
+    position: relative;
+
+    &__action {
+      border-radius: 8px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #666666;
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    height: 168px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 14px 40px 0 40px;
+
+    &__actionLeft {
+      width: 184px;
+      height: 72px;
+      border-radius: 36px;
+      border: 1px solid #CCCCCC;
+      font-size: 30px;
+      color: #666;
+      box-sizing: border-box;
+    }
+
+    &__actionRight {
+      width: 462px;
+      height: 72px;
+      background: #E62E4D;
+      border-radius: 36px;
+      background-color: #E62E4D;
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+}
+
+.setting_action {
+  font-size: 26px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.angle_right_icon {
+  width: 40px;
+  height: 40px;
+}
+
+.border_line {
+  border-bottom: 1px solid #f7f7f7;
+  border-radius: 14px 14px 0 0;
+}
+
+.special {
+  border-radius: 0 0 14px 14px;
+}
+.new_icon {
+  width: 64px;
+  height: 32px;
+  position: absolute;
+  left: 68px;
+  bottom: 56px;
+}
+.right_icon {
+  width: 32px;
+  height: 32px;
+}
+
+.audit_view {
+  margin-top: 32px;
+}
+
+.round_corner {
+  border-radius: 14px;
+}

@@ -1,0 +1,72 @@
+.container {
+  min-height: 100vh;
+  position: relative;
+  background-color: #ffd578;
+  overflow: hidden;
+}
+
+.danmu_c {
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg {
+  width: 750px;
+  height: 1624px;
+}
+
+.btn {
+  position: absolute;
+  top: 815px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 351px;
+  height: 99px;
+}
+
+.numbers {
+  position: absolute;
+  top: 160px;
+  left: 284px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox_group {
+  position: absolute;
+  top: 437px;
+  left: 77px;
+  width: 597px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  justify-content: space-around;
+}
+
+.checkbox_item {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.checkbox {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  margin-right: 24px;
+}
+
+.confirm {
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  width: 82px;
+  height: 53px;
+}

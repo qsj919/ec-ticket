@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 140px;
+  margin: 0 16px;
+  @include border-bottom-1px(#eee);
+  .tag {
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+  }
+  .content {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    font-size: 24px;
+    color: $title-color;
+    &__column {
+      flex: 1 0 0;
+      line-height: 1;
+      .billno {
+        line-height: 32px;
+        color: $normal-text-color;
+      }
+      .total {
+        line-height: 34px;
+        margin-top: 20px;
+      }
+
+      .pay {
+        display: flex;
+        align-items: center;
+        &__sign {
+          width: 40px;
+          height: 40px;
+          margin-right: 4px;
+        }
+      }
+      &--total {
+        flex: 1 0 50px;
+      }
+      &--balance {
+        text-align: right;
+        .text {
+         color: $subTitle-color; 
+        }
+      }
+      &--in {
+        color: #5ecc29;
+      }
+      &--out {
+        color: #fd6e72;
+      }
+      &--pay {
+        position: relative;
+        bottom: -4px;
+        .multi_pay {
+          position: absolute;
+          z-index: 2;
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+          font-size: 28px;
+          color: $title-color;
+          animation: fadeIn ease-in 0.2s;
+          &--down {
+            bottom: calc(100% + 20px);
+            &::before {
+              content: '';
+              position: absolute;
+              width: 15px;
+              height: 15px;
+              bottom: -5px;
+              left: 50%;
+              transform: translate(-50%, 0) rotateZ(45deg);
+              background-color: white;
+            }
+          }
+          &--up {
+            top: calc(100% + 20px);
+            &::after {
+              content: '';
+              position: absolute;
+              top: -5px;
+              left: 50%;
+              transform: translate(-50%, 0) rotateZ(45deg);
+              background-color: white;
+              width: 15px;
+              height: 15px;
+            }
+          }
+          .pay {
+            width: 200px;
+            height: 80px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+  .mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}

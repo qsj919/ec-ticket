@@ -1,0 +1,29 @@
+.phone_getter {
+  width: 60%;
+  background-color: white;
+  height: 220px;
+  padding: 40px;
+  margin: 0 auto;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  text-align: center;
+  color: $subTitle-color;
+  font-size: 28px;
+  &__title {
+    font-size: 32px;
+    color: $title-color;
+    margin-bottom: 6px;
+  }
+  &__button {
+    background-color: transparent;
+    color: $theme-color;
+    font-size: 26px;
+    padding: 40px;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+  }
+}

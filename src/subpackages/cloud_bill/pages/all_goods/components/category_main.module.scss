@@ -1,0 +1,78 @@
+
+.leftView {
+  // position: fixed;
+  background-color: white;
+  flex-direction: column;
+  height: 100%;
+  width: 164px;
+  // left: 0;
+  // top: 88px;
+  z-index: 102;
+  box-shadow: -1px 0px 0px $border-color;
+  transition: left ease-in-out 0.3s;
+  .singleView {
+    width: 164px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    height: 110px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .text {
+      font-size: $font26;
+      color: $theme-color;
+      text-align: center;
+      font-weight: 500;
+      line-height: 36px;
+    }
+  }
+  .noSingleView {
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 164px;
+    height: 110px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .text {
+      font-size: $font26;
+      color: $title-color;
+      text-align: center;
+      line-height: 36px;
+    }
+  }
+  .remark {
+    width: 8px;
+    height: 40px;
+    display: flex;
+    align-self: center;
+    position: absolute;
+    left: 0px;
+    background-color: $theme-color;
+  }
+}
+.arrow_left {
+  width: 80px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 120;
+  left: 164px;
+  bottom: 80px;
+  // padding: 20px;
+  border-radius: 0 40px 40px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+  transition: left ease-in-out 0.3s;
+  .left {
+    width: 32px;
+    height: 32px;
+    transition: transform ease-in-out 0.6s;
+  }
+}

@@ -1,0 +1,94 @@
+.navigationClass {
+  background-color: transparent;
+}
+.titleTextClass {
+  color: #222222;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.containerClass {
+  height: 100%;
+  box-sizing: border-box;
+}
+.manage-btn {
+  width: 124px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 300;
+  left: 84px;
+  &_text {
+    color: #2e6be6;
+    font-size: 30px;
+  }
+}
+
+.page {
+  padding-top: 20px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  flex: 1;
+  overflow-y: scroll;
+  // padding-bottom: 20px;
+  padding: 0 24px 20px;
+  // background-color: white;
+}
+
+// .total {
+//   padding: 0 40px;
+//   height: 80px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+//   font-size: 28px;
+//   color: $subTitle-color;
+// }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 108px;
+  padding: 0 40px 0 30px;
+  font-size: 28px;
+  color: $subTitle-color;
+  background-color: white;
+  @include fix-iphone-x('margin', 'bottom', 0);
+  &__check_all {
+    display: flex;
+    align-items: center;
+    .check_icon {
+      width: 36px;
+      height: 36px;
+      margin-right: 16px;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    &__total {
+      font-size: 28px;
+      color: $subTitle-color;
+      margin-right: 16px;
+    }
+  }
+}
+.emptyViewCar{
+  width: 50%;
+  height: 43%;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translateY(-50%) translateX(-50);
+}

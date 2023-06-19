@@ -1,0 +1,37 @@
+.container {
+  width: 630px;
+  // height: 1064px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 42px;
+  overflow: hidden;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 164px;
+    background: linear-gradient(to bottom, #ff6669, #ff999b);
+    &__text {
+      width: 322px;
+      height: 114px;
+    }
+  }
+  .qr_content {
+    padding: 120px 0;
+    &__qr_code {
+      display: block;
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+    }
+  }
+  .tips {
+    color: $title-color;
+    padding: 0 60px 60px;
+    &__title {
+      display: inline-block;
+      background: no-repeat left bottom / 100% 50% linear-gradient(to left, #FF999B, #FF6669);
+    }
+  }
+}
+

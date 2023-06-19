@@ -1,0 +1,115 @@
+.container {
+  color: #bbb;
+  padding: 40px 40px 0;
+  line-height: 1;
+  background-color: #f9f9f9;
+  height: 100vh;
+  box-sizing: border-box;
+  .title {
+    color: #333;
+    font-size: 44px;
+  }
+  .sub_title {
+    margin: 40px 0 60px;
+    font-size: 28px;
+  }
+  .phones {
+    background-color: white;
+    padding: 0 40px;
+    color: $title-color;
+    font-size: 28px;
+    border-radius: 8px;
+    animation: FadeIn 0.3s ease-in;
+    &__phone {
+      // width: 670px;
+      height: 100px;
+      line-height: 100px;
+      position: relative;
+      &:not(:last-child) {
+        @include border-bottom-1px($border-color);
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotateZ(45deg);
+        border-top: 4px solid #bbb;
+        border-right: 4px solid #bbb;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .inputs {
+    animation: FadeIn 0.3s ease-in;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #333;
+    .input {
+      padding: 0 40px;
+      height: 100px;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      &:first-child {
+        @include border-bottom-1px(#eeeeee);
+      }
+      &__icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 24px;
+      }
+      &__input {
+        flex: 1;
+      }
+      &__code {
+        color: #666;
+        &--active {
+          color: $blue;
+        }
+        &--wait {
+          color: #999;
+        }
+      }
+    }
+  }
+  .tips {
+    font-size: 24px;
+    margin-top: 15px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__error {
+      color: red;
+    }
+    &__back {
+      // align-self: stretch;
+      line-height: 40px;
+      font-size: 24px;
+      color: $blue;
+      text-align: right;
+      padding-right: 40px;
+    }
+  }
+  .button {
+    position: fixed;
+    left: 40px;
+    width: 670px;
+    bottom: calc(constant(safe-area-inset-bottom) + 50px);
+    bottom: calc(env(safe-area-inset-bottom) + 50px);
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,68 @@
+.container {
+  // padding: 0 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 201;
+  padding: 20px 48px;
+  background-color: white;
+}
+
+.shop_list {
+  padding: 0 40px;
+  height: calc(100vh - 120px);
+}
+
+.words_container {
+  position: absolute;
+  top: 120px;
+  height: calc(100vh - 120px);
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+}
+
+.words_wrapper {
+  height: 100%;
+  padding: 0 40px;
+  font-size: 28px;
+  color: $subTitle-color;
+}
+
+
+
+.words__item {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include border-bottom-1px($border-color);
+}
+
+.highlight {
+  color: $theme-color;
+}
+
+
+.angle_righ {
+  width: 40px;
+  height: 40px;
+}
+
+.menu_container {
+  padding-top: 120px;
+}
+.no_more {
+  text-align: center;
+  height: 60px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  color: $normal-text-color;
+}

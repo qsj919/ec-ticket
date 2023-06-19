@@ -1,0 +1,187 @@
+.itemShareWrapper {
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: SourceHanSansCN-Normal, SourceHanSansCN, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  .backArrow,
+  .share {
+    z-index: 2;
+    position: absolute;
+    top: 35px;
+    width: 66px;
+    height: 66px;
+    line-height: 66px;
+    border-radius: 33px;
+
+    .backArrowImg,
+    .shareImg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .backArrow {
+    left: 35px;
+  }
+
+  .share {
+    right: 35px;
+  }
+  .topImg {
+    position: relative;
+
+    .swiper {
+      // height: 55vh;
+      height: 820px;
+      background-color: #f9f9f9;
+
+      .swiperItem {
+        .imgBigCover {
+          width: 750px;
+          height: 820px;
+          // height: 55vh;
+          // width: 100vw;
+          //   max-height: 55vh;
+          //   text-align: center;
+
+          .imgBig {
+            width: 100%;
+            height: 100%;
+            //     margin-top: 50%;
+            //     transform: translateY(-50%);
+            //     height: 100%;
+          }
+        }
+      }
+    }
+
+    .indicator {
+      z-index: 1;
+      position: absolute;
+      bottom: 35px;
+      right: 35px;
+      width: 80px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 25px;
+      color: #fff;
+      font-size: 28px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .detailInfo {
+    padding: 0 44px;
+    margin-top: 15px;
+    color: #333;
+    font-size: 33px;
+
+    .name,
+    .colorCover,
+    .sizeCover {
+      margin-top: 10px;
+    }
+
+    .name {
+      color: #bbb;
+      font-size: 29px;
+    }
+
+    .colorCover,
+    .sizeCover {
+      display: flex;
+      font-size: 31px;
+
+      .colorWord,
+      .sizeWord {
+        margin-right: 15px;
+        width: 75px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #f9f9f9;
+        border-radius: 20px;
+        color: #bbb;
+        font-size: 22px;
+      }
+
+      .color,
+      .size {
+        width: 100%;
+      }
+    }
+  }
+
+  .modal {
+    z-index: 3;
+    padding: 2vh 10vw 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 98vh;
+    background: rgba(0, 0, 0, 0.49);
+
+    .shareGuideCover {
+      margin-bottom: 2vh;
+      text-align: right;
+
+      .img {
+        width: 219px;
+        height: 161px;
+      }
+    }
+    .guideTip {
+      padding: 0 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 70vw;
+      height: 212px;
+      font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+      background: #fff;
+      border-radius: 9px;
+      font-size: 32px;
+      font-weight: 400;
+      color: #333;
+    }
+  }
+  .image_wrapper {
+    padding: 30px 30px 0;
+  }
+  .goods_info_wrapper {
+    border-radius: 40px 40px 0 0;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    top: -40px;
+    z-index: 2;
+  }
+  .bottom_btns {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 60px;
+  }
+  .share_setting_button {
+    flex: 1;
+    height: 88px;
+    line-height: 88px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    background-color: #ff6f72;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    &--orange {
+      background-color: rgba(255, 198, 112, 1);
+      margin-right: 40px;
+    }
+  }
+}

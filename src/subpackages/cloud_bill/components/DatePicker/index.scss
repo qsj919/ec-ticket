@@ -1,0 +1,158 @@
+$duration: 0.5s;
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.49;
+  overflow: hidden;
+  animation-name: showMask;
+  animation-duration: $duration;
+}
+.dateSelector {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 102;
+  width: 100%;
+  height: 910px;
+  background-color: #fff;
+  animation-name: showDateComponent;
+  animation-duration: $duration;
+}
+.filter-range-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    background-color: white;
+  }
+  
+  .filter-range-view__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding: 40px 40px 0;
+  }
+  
+  .filter-range-view__header__title {
+    font-size: 30px;
+    color: #222222;
+  }
+  .filter-tag-view__tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .picker {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filter-range-view__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .filter-range-view__main__input {
+    background: white;
+    width: 230px;
+    height: 64px;
+    border-radius: 32px;
+    font-size: 30px;
+    color: #222222;
+    text-align: center;
+    border: 1px solid #cccccc;
+  }
+  
+  .filter-range-view__main__input:last-child {
+    margin-right: 22px;
+  }
+  
+  .filter-rang-view__main__divider {
+    background: #c2c2c2;
+    height: 2px;
+    width: 20px;
+    margin: 20px;
+  }
+  
+  .filter-tag-view__divider {
+    background: #cccccc;
+    height: 1px;
+    opacity: 0.3;
+  }
+  
+  .text {
+    font-size: 30px;
+    color: #cccccc;
+    text-align: center;
+  }
+  .has_text {
+    font-size: 30px;
+    color: #222222;
+    text-align: center;
+  }
+  .filter-range-view__main__picker {
+    background: white;
+    width: 50%;
+    height: 64px;
+    border-radius: 20px;
+    font-size: 30px;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cccccc;
+  }
+  
+  .bottomBtn {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    font-size: 30px;
+    animation-name: showBtn;
+    animation-duration: $duration;
+
+    .btnCancel,
+    .btnConfirm {
+      width: 314px;
+      height: 88px;
+      line-height: 88px;
+      text-align: center;
+      border-radius: 44px;
+    }
+
+    .btnCancel {
+      margin-right: 40px;
+      background-color: #f6f6f6;
+      color: #333;
+    }
+
+    .btnConfirm {
+      background-color: #ff6f72;
+      color: #fff;
+    }
+  }

@@ -1,0 +1,135 @@
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+.sln_container {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  &_shops {
+    width: 100%;
+    // height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    // flex-wrap: nowrapc;
+    box-sizing: border-box;
+    &__shop {
+      width: 135px;
+      height: 150px;
+      flex: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      box-sizing: border-box;
+      padding: 5px 0;
+      margin-left: 8px;
+      .noLogoView {
+        background-color: rgba(255, 230, 234, 0.7);
+      }
+      .text_center {
+        box-sizing: border-box;
+        padding-top: 11px;
+      }
+      .noLogoText {
+        width: 71%;
+        height: 71%;
+        text-align: center;
+        display: -webkit-box;
+        overflow:hidden;
+        /*autoprefixer:off*/
+        -webkit-box-orient:vertical;
+        /*autoprefixer:on*/
+        -webkit-line-clamp: 2;
+        text-overflow:ellipsis;
+        word-break: break-all;
+        color: rgba(230, 46, 77, 1);
+        font-weight: 500;
+      }
+
+      .sln_shopLogoUrl {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        transition: all 0.15s ease-in-out 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+      }
+
+      .sln_shopLogoUrl--active {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        border: 2px solid #da6f7c;
+        transition: all 0.15s ease-in-out 0.2s;
+      }
+
+      .sln_shopName {
+        max-width: 100%;
+        font-size: 25px;
+        color: #666666;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .all_shops_item_view {
+        width: 70px;
+        height: 70px;
+        position: relative;
+      }
+      .last_shop__first {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+      }
+      .last_shop__second {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+      .last_shop__third {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+      }
+      .last_shop__fourth {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 4;
+      }
+    }
+  }
+}
+
+
+.all_shops_label {
+  width: 86px;
+  height: 24px;
+  position: relative;
+  top: -4px;
+}
