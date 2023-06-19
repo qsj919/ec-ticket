@@ -1,1 +1,0 @@
-"use strict";(wx.webpackJsonp=wx.webpackJsonp||[]).push([[7964],{86720:function(c){c.exports="https://webdoc.hzecool.com/webCdn/weapp/ec-ticket/src/subpackages/ticket/images/d43360cc5896093f5674..png"}}]);
